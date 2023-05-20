@@ -1,0 +1,62 @@
+﻿@page
+@using PushPop.Models
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Stack";
+}
+
+
+    <div class="text-center">
+    <h1 class="display-4">Visualizador de Stack</h1>
+    <p>Uma aplicação para conseguir visualizar o funcionamento de uma stack</p>
+    
+    <br/>
+    <div class="container text-center">
+      <div class="row align-items-start">
+          <div class="col">
+              <p> TOPO DA STACK </p>
+              <ul class="list-group mb-1">
+                  @{
+                      int pos = 0;
+                  }
+                  @foreach (var element in @Model.modelStack.ReturnStack())
+                  {
+                      if (pos == 0)
+                      {
+                          <li class="list-group-item active">@element</li>
+                      }
+                      else
+                      {
+                          <li class="list-group-item">@element</li>
+                      }
+                      pos++;
+                  }
+              </ul>
+              <p> FUNDO DA STACK </p>
+          </div>
+        <div class="col">
+            <h1 class="display-5 align-items-start">Controles da stack</h1>
+            <br/>
+
+            <div class="row align-items-start">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <form method="post" class="row g-3 border" >
+                            <div class="col-md">
+                                <label class="form-label"></label>
+                                <input type="text" class="form-control" name="pushValue">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary" asp-page-handler="Push">Push Value</button>
+                                <button type="submit" class="btn btn-danger" asp-page-handler="Pop">Pop Value</button>
+                            </div>
+                            <br/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
