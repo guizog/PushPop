@@ -4,69 +4,58 @@ namespace PushPop.Models;
 
 public class Stack
 {
-    static private int MaxSize = 100;
-    public int Top;
-    public int[] stack = new int[MaxSize];
-
-    public Stack()
-    {
-        Top = -1;
+    public int size;
+    public Node? head;
+    public Node? tail;
+    
+    public Stack(){
+        size = 0;
+        head = null;
+        tail = null;
     }
-
-    public bool IsEmpty()
+    
+    public Node GetNode(int data)
     {
-        return (Top <= 0);
+        Node node = new Node(data);
+        return node;
     }
-
-    public bool Push(int value)
-    {
-        if (Top >= MaxSize)
-        {
-            Console.WriteLine("Stack Cheia");
-            return false;
+    
+    public void Push(int value){
+        Node node = new Node(value);
+        
+        if(head == null){
+            node.next = null;
         }
-        Top++;
-        stack[Top] = value;
-        return true;
-    }
-
-    public int Pop()//arrumar out of bounds
-    {
-        if (Top <= 0)
-        {
-            Console.WriteLine("Stack Vazia");
-            Top--;
-            return 0;
+        else{
+            node.next = head;
         }
-        Top--;
-        return stack[Top];
+        size++;
+        head = node;
     }
-
-    public void PeekStack()
-    {
-        if (Top < 0)
-            Console.WriteLine("Stack Vazia");
-        else
-            Console.WriteLine("O valor no topo da stack é: " + stack[Top]);
-    }
-
-    public void PrintStack()
-    {
-        if (Top < 0)
-            Console.WriteLine("Stack vazia");
-        else
-            for (int i = Top; i >= 0; i--)
-                Console.WriteLine(stack[i]);
-    }
-
-    public int[] ReturnStack()
-    {
-        int[] newStack = new int[Top + 1];
-        //inverter a sequencia dos valores
-        for(int i = Top; i >= 0; i--){
-            newStack[i] = stack[i];
+    
+    public int Pop(){
+        if(head == null){
+            return -1;
         }
-        Array.Reverse(newStack);
-        return newStack;
+        int data = head.data;
+        size--;
+        head = head.next;
+        return data;
+    }
+    
+    public int[] ReturnStack(){
+        Node curr = head;
+        int[] arr = new int[size];
+        int i = 0;
+        while(curr != null){
+            arr[i] = curr.data;
+            i++;
+            curr = curr.next;
+        }
+        return arr;
+    }
+    
+    public bool isEmpty(){
+        return (size <= 0);
     }
 }    
