@@ -18,8 +18,8 @@ Valentina Gritti
 ### Prerequisitos
 
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
-* [.Net Core 3.0 or later](https://dotnet.microsoft.com/download/dotnet-core/2.2)
-* EF Core 3.0 or later
+* [.Net Core 3.0 ou mais novo](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+* EF Core 3.0 ou mais novo
 
 ### Rodando
 1. Clone o repositorio
