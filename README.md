@@ -10,6 +10,11 @@ Luana Elis
 Pedro Almeida   
 Valentina Gritti      
 
+### Demonstração
+
+![alt text](https://github.com/guizog/PushPop/blob/main/img/queue.jpg)
+![alt text](https://github.com/guizog/PushPop/blob/main/img/stack.jpg)
+
 ### Prerequisitos
 
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
