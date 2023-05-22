@@ -4,11 +4,11 @@ Projeto de Algoritmos e Estruturas de dados III que visa implementar Pilhas e Fi
 
 # Integrantes
 
-Brenda Cristina Lima
-Guilherme Zografos
-Luana Elis
-Pedro Almeida
-Valentina Gritti
+Brenda Cristina Lima  
+Guilherme Zografos  
+Luana Elis  
+Pedro Almeida 
+Valentina Gritti  
 
 ### Prerequisitos
 
