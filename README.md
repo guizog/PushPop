@@ -33,7 +33,7 @@ dotnet build
 ```
 4. Dentro do repositorio, rode o projeto:
 ```csharp
-dotnet run
+dotnet watch run
 ```
 
 
