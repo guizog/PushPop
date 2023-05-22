@@ -31,7 +31,7 @@ dotnet restore
 ```csharp
 dotnet build
 ```
-4. Dentro do repositorio, rode o projeto:
+4. Dentro da pasta PushPop, rode o projeto:
 ```csharp
 dotnet watch run
 ```
