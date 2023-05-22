@@ -2,6 +2,14 @@
 # Push&Pop
 Projeto de Algoritmos e Estruturas de dados III que visa implementar Pilhas e Filas e demonstrá-las.
 
+# Integrantes
+
+Brenda Cristina Lima
+Guilherme Zografos
+Luana Elis
+Pedro Almeida
+Valentina Gritti
+
 ### Prerequisitos
 
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
