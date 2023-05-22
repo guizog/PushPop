@@ -23,7 +23,7 @@ Valentina Gritti
 
 ### Rodando
 1. Clone o repositorio
-2. Na raiz do repositorio, rode o seguinte código para resgatar as dependencias:
+2. Dentro da pasta PushPop, rode o seguinte código para resgatar as dependencias:
 ```csharp
 dotnet restore
 ```
