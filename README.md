@@ -1,14 +1,6 @@
 
 # Push&Pop
-Projeto de Algoritmos e Estruturas de dados III que visa implementar Pilhas e Filas em C# e visualizar o funcionamento delas.
-
-# Integrantes
-
-Brenda Cristina Lima  
-Guilherme Zografos  
-Luana Elis  
-Pedro Almeida   
-Valentina Gritti      
+Projeto de Algoritmos e Estruturas de dados III que visa implementar Pilhas e Filas em C# e visualizar o funcionamento delas.  
 
 ### Demonstração
 
